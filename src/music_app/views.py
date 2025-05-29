@@ -7,5 +7,10 @@ def home(request):
 def bio(request):
     return render(request, 'bio.html')
 
-def bio(request):
+def contact(request):
+    print("hii this is contact page ")
     return render(request, 'contact.html')
+
+def concert(request):
+    print("hii this is concert page ")
+    return render(request, 'concert.html')

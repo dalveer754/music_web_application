@@ -16,11 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from music_app.views import home, bio 
+from music_app.views import home, bio , contact, concert
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
     path('bio/', bio, name='bio'),  # Assuming 'home' view handles both home and bio
-    path('contact/', bio, name='contact'),
+    path('contact/', contact, name='contact'),
+    path('concert/', concert, name='concert'),
 ]

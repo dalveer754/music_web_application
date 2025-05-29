@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhay Beats - Bio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Header (moved out of head) -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-yellow-600 via-black-700 to-black text-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo / Title -->
+        <div class="text-3xl font-bold flex items-center space-x-2">
+          <span>
+            <img src="{% static 'abhay_icon.png' %}" alt="Abhay Icon" class="w-10 h-10 rounded-full">
+          </span>
+          <span>𝒜𝒷𝒽𝒶𝓎 𝐵𝑒𝒶𝓉𝓈</span>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="space-x-6 text-md font-semibold">
+          <a href="{% url 'bio' %}" class="px-3 py-1 rounded-md hover:bg-yellow-500 hover:text-black transition-all duration-200">Bio</a>
+          <a href="#" class="px-3 py-1 rounded-md hover:bg-yellow-500 hover:text-black transition-all duration-200">Showcase</a>
+          <a href="#" class="px-3 py-1 rounded-md hover:bg-yellow-500 hover:text-black transition-all duration-200">Music</a>
+          <a href="#" class="px-3 py-1 rounded-md hover:bg-yellow-500 hover:text-black transition-all duration-200">Videos</a>
+          <a href="{% url 'concert' %}" class="px-3 py-1 rounded-md hover:bg-yellow-500 hover:text-black transition-all duration-200">Concerts</a>
+          <a href="#" class="px-3 py-1 rounded-md hover:bg-yellow-500 hover:text-black transition-all duration-200">Tours</a>
+          <a href="{% url 'contact' %}" class="px-3 py-1 rounded-md hover:bg-yellow-500 hover:text-black transition-all duration-200">Contact</a>
+          <a href="#" class="px-3 py-1 rounded-md hover:bg-yellow-500 hover:text-black transition-all duration-200">Exclusive Deals</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="pt-32 text-center">
+    <h1 class="text-2xl font-bold text-blue-900">Yo Yo Honey Singh Concerts</h1>
+    <p class="text-sm text-indigo-600">Join the Excitement of Live Music</p>
+  </div>
+
+  <!-- Card Section -->
+  <div class="max-w-5xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 p-4 bg-gradient-to-r from-pink-500 via-purple-500 to-red-500 rounded-lg">
+    <!-- Card 1 -->
+    <div class="group relative bg-white text-black p-8 rounded-lg shadow-lg transition-transform transform hover:-translate-y-3 hover:shadow-2xl duration-300 ease-in-out">
+      <h2 class="text-lg font-bold mb-2">Live Concerts</h2>
+      <p class="mb-4 text-sm">Experience the electrifying performances by Yo Yo Honey Singh. Join us for live concerts that will leave you mesmerized.</p>
+      <button class="bg-purple-600 text-white text-sm px-4 py-2 rounded hover:bg-purple-800 transition">Learn More</button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="group relative bg-white text-black p-8 rounded-lg shadow-lg transition-transform transform hover:-translate-y-3 hover:shadow-2xl duration-300 ease-in-out">
+      <h2 class="text-lg font-bold mb-2">Backstage Passes</h2>
+      <p class="mb-4 text-sm">Get exclusive access to behind-the-scenes action. Apply for backstage passes and be a part of the thrilling journey.</p>
+      <button class="bg-purple-600 text-white text-sm px-4 py-2 rounded hover:bg-purple-800 transition">Learn More</button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="group relative bg-white text-black p-8 rounded-lg shadow-lg transition-transform transform hover:-translate-y-3 hover:shadow-2xl duration-300 ease-in-out">
+      <h2 class="text-lg font-bold mb-2">Ticket Sales</h2>
+      <p class="mb-4 text-sm">Purchase your tickets for upcoming concerts and enjoy the magic of Yo Yo Honey Singh live on stage.</p>
+      <button class="bg-purple-600 text-white text-sm px-4 py-2 rounded hover:bg-purple-800 transition">Learn More</button>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="group relative bg-white text-black p-8 rounded-lg shadow-lg transition-transform transform hover:-translate-y-3 hover:shadow-2xl duration-300 ease-in-out">
+      <h2 class="text-lg font-bold mb-2">VIP Experiences</h2>
+      <p class="mb-4 text-sm">Elevate your concert experience with VIP packages. Enjoy premium seating, meet-and-greet sessions, and more.</p>
+      <button class="bg-purple-600 text-white text-sm px-4 py-2 rounded hover:bg-purple-800 transition">Learn More</button>
+    </div>
+  </div>
+
+  <!-- Bottom Section -->
+  <div class="max-w-5xl mx-auto mt-10 bg-black text-white p-6 rounded-lg grid md:grid-cols-2 gap-6 items-center">
+    <!-- Image -->
+    <div>
+      <img src="https://i.imgur.com/UePbdph.jpg" alt="Concert" class="rounded shadow-lg">
+    </div>
+    <!-- Contact Info -->
+    <div>
+      <h3 class="text-sm text-gray-400 mb-1">| YO YO HONEY SINGH: FAMOUS</h3>
+      <h2 class="text-lg font-bold mb-2">Want to be part of the action?</h2>
+      <p class="text-sm mb-4">Reach out to us with your details and get involved in the magic of live concerts with Yo Yo Honey Singh.</p>
+      <button class="bg-purple-600 text-white text-sm px-4 py-2 rounded hover:bg-purple-800 transition">Contact Us</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-yellow-700 via-yellow-600 to-yellow-500 text-white pt-12">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Profile -->
+      <div class="flex flex-col items-start md:col-span-2">
+        <img src="{% static 'singer.jpg' %}" alt="Yo Yo" class="w-20 h-20 rounded-full mb-4" />
+        <h3 class="text-lg font-semibold">Yo Yo Honey Singh</h3>
+        <p><span class="font-bold">Contact:</span> <a href="mailto:management@yoyohoneysingh.co.in" class="hover:underline">management@yoyohoneysingh.co.in</a></p>
+        <p>West Delhi boy living Emirati life!</p>
+      </div>
+
+      <!-- Music Links -->
+      <div>
+        <h4 class="text-lg font-semibold mb-3">Music</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline">Latest Releases</a></li>
+          <li><a href="#" class="hover:underline">Albums</a></li>
+          <li><a href="#" class="hover:underline">Singles</a></li>
+          <li><a href="#" class="hover:underline">Collaborations</a></li>
+        </ul>
+      </div>
+
+      <!-- About and Media -->
+      <div>
+        <h4 class="text-lg font-semibold mb-3">About</h4>
+        <ul class="space-y-2 text-sm mb-4">
+          <li><a href="#" class="hover:underline">About Yo Yo</a></li>
+          <li><a href="#" class="hover:underline">Tours</a></li>
+          <li><a href="#" class="hover:underline">Merch</a></li>
+        </ul>
+        <h4 class="text-lg font-semibold mb-3">Media</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline">Gallery</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="border-t border-gray-300 mt-8 py-6 text-center text-sm bg-black text-gray-300">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+        <p>© 2025 Abhay Saxena. Design & Developed by <span class="font-bold text-white">Dalveer</span></p>
+        <div class="flex gap-4 mt-4 md:mt-0">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
