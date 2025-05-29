@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhay Beats - Bio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black font-sans pt-20">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-yellow-600 via-black-700 to-black text-white shadow-lg">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo / Title -->
+        <div class="text-3xl font-bold flex items-center space-x-2">
+          <span><img src = "{% static 'abhay_icon.png' %}" alt="Abhay Icon" class="w-10 h-10 rounded-full"> </span>
+          <span>𝒜𝒷𝒽𝒶𝓎 𝐵𝑒𝒶𝓉𝓈</span>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="space-x-6 text-md font-semibold">
+          <a href="{% url 'bio'%}" class="px-3 py-1 rounded-md hover:bg-yellow-500 hover:text-black transition-all duration-200">Bio</a>
+          <a href="#" class="px-3 py-1 rounded-md hover:bg-yellow-500 hover:text-black transition-all duration-200">Showcase</a>
+          <a href="#" class="px-3 py-1 rounded-md hover:bg-yellow-500 hover:text-black transition-all duration-200">Music</a>
+          <a href="#" class="px-3 py-1 rounded-md hover:bg-yellow-500 hover:text-black transition-all duration-200">Videos</a>
+          <a href="#" class="px-3 py-1 rounded-md hover:bg-yellow-500 hover:text-black transition-all duration-200">Concerts</a>
+          <a href="#" class="px-3 py-1 rounded-md hover:bg-yellow-500 hover:text-black transition-all duration-200">Tours</a>
+          <a href="#" class="px-3 py-1 rounded-md hover:bg-yellow-500 hover:text-black transition-all duration-200">Contact</a>
+          <a href="#" class="px-3 py-1 rounded-md hover:bg-yellow-500 hover:text-black transition-all duration-200">Exclusive Deals</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Bio Hero Section -->
+  <section class="text-center py-12 bg-gray-50">
+    <h2 class="text-4xl font-bold mb-2">Abhay Beats's Bio</h2>
+    <p class="text-gray-600 text-lg">Learn More About the Artist</p>
+  </section>
+
+  <!-- Image Showcase -->
+  <section class="max-w-5xl mx-auto px-4 pb-10">
+    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" alt="Abhay Performing" class="rounded-xl shadow-lg mx-auto w-full h-auto object-cover" />
+  </section>
+
+  <!-- About Section -->
+  <section class="bg-white py-10">
+    <div class="max-w-4xl mx-auto px-4 text-left">
+      <h3 class="text-3xl font-semibold mb-4">About Abhay Beats</h3>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        Abhay is a dynamic Indian music producer and singer known for his unique blend of traditional rhythms and modern beats.
+        Emerging from the heart of Madhya Pradesh, he has captivated audiences with his soulful voice and electrifying performances.
+      </p>
+
+      <!-- Highlights -->
+      <div class="bg-gray-100 p-6 rounded-lg shadow-sm">
+        <h4 class="text-xl font-semibold mb-4">Career Highlights</h4>
+        <ul class="list-disc list-inside text-gray-800 space-y-2">
+          <li>2021: Debut album "Rhythm of the Heart" tops regional charts.</li>
+          <li>2022: Collaborated with renowned artists in the fusion music scene.</li>
+          <li>2023: Performed at major music festivals across India.</li>
+          <li>2024: Released the hit single "Desi Groove" with over 10 million streams.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="bg-gradient-to-r from-yellow-700 via-yellow-600 to-yellow-500 text-white pt-12">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <!-- Profile -->
+    <div class="flex flex-col items-start md:col-span-2">
+      <img src="{% static 'singer.jpg' %}" alt="Yo Yo" class="w-20 h-20 rounded-full mb-4" />
+      <h3 class="text-lg font-semibold">Yo Yo Honey Singh</h3>
+      <p><span class="font-bold">Contact:</span> <a href="mailto:management@yoyohoneysingh.co.in" class="hover:underline">management@yoyohoneysingh.co.in</a></p>
+      <p>West Delhi boy living Emirati life!</p>
+    </div>
+
+    <!-- Music Links -->
+    <div>
+      <h4 class="text-lg font-semibold mb-3">Music</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline">Latest Releases</a></li>
+        <li><a href="#" class="hover:underline">Albums</a></li>
+        <li><a href="#" class="hover:underline">Singles</a></li>
+        <li><a href="#" class="hover:underline">Collaborations</a></li>
+      </ul>
+    </div>
+
+    <!-- About and Media -->
+    <div>
+      <h4 class="text-lg font-semibold mb-3">About</h4>
+      <ul class="space-y-2 text-sm mb-4">
+        <li><a href="#" class="hover:underline">About Yo Yo</a></li>
+        <li><a href="#" class="hover:underline">Tours</a></li>
+        <li><a href="#" class="hover:underline">Merch</a></li>
+      </ul>
+      <h4 class="text-lg font-semibold mb-3">Media</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline">Gallery</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="border-t border-gray-300 mt-8 py-6 text-center text-sm bg-black text-gray-300">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+      <p>© 2025 Abhay Saxena. Design & Developed by <span class="font-bold text-white">Dalveer</span></p>
+      <div class="flex gap-4 mt-4 md:mt-0">
+        <!-- Replace # with actual links -->
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- FontAwesome CDN -->
+<script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
